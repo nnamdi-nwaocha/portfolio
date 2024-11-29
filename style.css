@@ -1,0 +1,83 @@
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #eeeeee;
+}
+
+nav {
+  padding-top: 1.5rem;
+}
+
+header {
+  padding: 0.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email {
+  display: flex;
+}
+
+.email p {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-copy {
+  margin-left: 0.5rem;
+  background-color: white;
+  color: black;
+}
+
+/* Make nav items black */
+.custom-nav .nav-link {
+  color: black;
+  text-decoration: none; /* Remove default underline */
+  padding-left: 1.5rem;
+}
+
+/* Apply underline on hover */
+.custom-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Remove padding between items */
+.custom-nav .nav-pills {
+  padding-left: 0;
+}
+
+.heading-lower {
+  color: #526d82;
+  line-height: 0.7rem;
+}
+
+.floating-text {
+  position: absolute;
+  top: 50%; /* Vertically center over image */
+  left: 50%; /* Horizontally center over image */
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #526d82; /* White text for contrast */
+  text-shadow: 2px 2px 5px white; /* Add shadow for visibility */
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-text-p {
+  padding: 0.4rem 0.8rem;
+  background-color: white;
+  transform: translateX(6rem);
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -90%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
